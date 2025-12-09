@@ -1,0 +1,10 @@
+image: python:3.9
+
+stages:
+  - test
+  - deploy
+
+test-job:
+  script:
+    - pip install -r requirements.txt
+    - pytest tests/
